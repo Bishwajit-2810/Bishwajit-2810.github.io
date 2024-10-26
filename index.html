@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishwajit's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b478baca32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -------------header-------------- -->
+
+    <div id="header">
+      <div id="container">
+        <nav>
+          <img src="images/bk_logo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Fullstack Developer</p>
+          <h1>Hi, I'm <span>Bishwajit</span> <br />From Bangladesh</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------about------------ -->
+
+    <div id="about">
+      <div id="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/bk_user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, currently I am a student of Computer Science and Engineering.
+              I love to learn about new technologies. Open source, build in public and 
+              collabing with others excites me more.
+              currently I am learning Html css javaScript and have some previous experience with 
+              Flutter and NodeJs
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS Apps
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>Backend Development</span><br />Web App Backend
+                  Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />Web Development Training
+                  <br />Udemy
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />App Development Training
+                  <br />Mitch CoCo
+                </li>
+                <li>
+                  <span>2023 - 2024</span><br />NodeJs Backend Training
+                  <br />Price Kumar
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />B.Sc in CSE <br />Daffodil
+                  International University
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Web Development Training
+                  <br />Udemy
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />App Development Training
+                  <br />Mitch CoCo
+                </li>
+                <li>
+                  <span>2023 - 2024</span><br />NodeJs Backend Training
+                  <br />Price Kumar
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------Services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Crafting intuitive interfaces that bridge the gap between technology and human connection.
+              From concept to launch, I bring expertise in app design to create seamless user experiences that drive results.
+              Transforming screens into interactive windows of opportunity, one app at a time
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Where aesthetics meet functionality: delivering web designs that exceed expectations and drive results.
+              Expertly crafting online experiences that captivate, inform, and inspire - from e-commerce platforms to corporate websites.
+              Transforming digital spaces into interactive gateways to opportunity - expertly designed websites for every need.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend Design</h2>
+            <p>
+              Building robust, scalable, and secure backends that power modern applications.
+              Expertly architecting backend systems that drive business outcomes - from data-driven insights to seamless user experiences.
+              ransforming digital infrastructure into powerful engines of growth and innovation - expertly designed backend systems for every need.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------portfolio------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Habit Tracker App</h3>
+              <p>
+                Track habits: Set reminders, log progress, and visualize your streaks
+                Create custom habits tailored to your specific goals and needs
+                Track your habit tracking progress over time and receive insights on areas for improvement
+              </p>
+              <a href="https://github.com/Bishwajit-2810/Habit-Tracker" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Note Taking App</h3>
+              <p>
+                Take notes: Create new notes with text, images, and audio recordings
+                Use tags, categories, and notebooks to keep your notes organized
+                Quickly find specific notes using our powerful search and filtering capabilities
+              </p>
+              <a href="https://github.com/Bishwajit-2810/Notes-App" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Product Search: Search for shoes by brand, style, color, size, and price
+                View detailed product information, including reviews and ratings
+                Add products to your cart and checkout securely
+                View your past orders and track their status
+                
+              </p>
+              <a href="https://github.com/Bishwajit-2810/Ecommerce-App" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Bishwajit-2810?tab=repositories" target="_blank" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -------------Contact------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <a href="mailto:bishwajit2810@gmail.com"><p><i class="fa-solid fa-paper-plane"></i>bishwajit2810@gmail.com</p></a>
+                <a href="tel:+8801740694967"><p><i class="fa-solid fa-square-phone"></i>+8801740694967</p></a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bishwajit.2810" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.instagram.com/bishwajit_2810/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Bishwajit_2810" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="https://www.linkedin.com/in/bishwajit-chakraborty/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Bishwajit-2810" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/Bishwajit-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" required placeholder="Your Name" name="Name">
+                    <input type="email" required placeholder="Your Email" name="Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+      </div>
+      <!-- -------------copyright------------ -->
+
+      <div class="copyright">
+        <p>Copyright &copy;  Bishwajit. Made with <i class="fa-brands fa-github"></i> github.io </p>
+      </div>
+
+
+    </div>
+
+<!-- -------------script------------ -->
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContents = document.getElementsByClassName("tab-contents");
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabName).classList.add("active");
+      }
+    </script>
+    <script>
+        var sideMenu=document.getElementById("sidemenu")
+        function openMenu(){
+            sideMenu.style.right="0"
+        }
+        function closeMenu(){
+            sideMenu.style.right="-250px"
+        } 
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxuBxR01xzJDdNfnMSGxzLhpAQ-jFUodd06brAkrJRndliq4XMsH36rLimkbrC2B7hx/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+  </body>
+</html>
